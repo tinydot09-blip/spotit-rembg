@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: spotit-rembg
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app --workers 1 --timeout 120
+    envVars:
+      - key: SPOTIT_API_KEY
+        value: spotit-rembg-secret   # change this to any secret string
+      - key: PYTHON_VERSION
+        value: 3.11.0
+    plan: free
