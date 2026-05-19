@@ -2,3 +2,4 @@ flask
 gunicorn
 rembg[cpu]
 Pillow
+numpy
