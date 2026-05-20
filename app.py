@@ -1,3 +1,4 @@
+from rembg import remove
 from flask import Flask, request, jsonify, send_file
 from rembg import remove
 from PIL import Image
