@@ -4,7 +4,7 @@ from rembg import remove
 from PIL import Image
 import io
 import os
-
+remove(b"test")
 app = Flask(__name__)
 
 
